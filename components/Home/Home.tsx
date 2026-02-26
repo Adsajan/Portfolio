@@ -1,0 +1,21 @@
+import Hero from "./Hero/Hero";
+import Services from "./Services/Services";
+import Resume from "./Resume/Resume";
+import Projects from "./Projects/Projects";
+import Skills from "./Skills/Skills";
+import Contact from "./Contact/Contact";
+
+const Home = () => {
+  return (
+    <main className="overflow-hidden">
+      <Hero />
+      <Services />
+      <Resume />
+      <Projects />
+      <Skills />
+      <Contact />
+    </main>
+  );
+};
+
+export default Home;
