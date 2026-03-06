@@ -28,7 +28,7 @@ const Hero = () => {
         </div>
 
         <p className="theme-accent theme-accent-border-soft theme-accent-soft-bg mt-6 rounded-full border px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.2em] sm:text-sm">
-          Frontend + Full Stack
+          Frontend + UI/UX
         </p>
 
         <h1 className="mt-4 text-3xl font-bold leading-tight sm:text-4xl md:text-6xl">

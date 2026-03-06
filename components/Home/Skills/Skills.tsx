@@ -1,4 +1,33 @@
 import { skillsData } from "@/constant/consant";
+import {
+  SiDocker,
+  SiGithub,
+  SiHtml5,
+  SiJavascript,
+  SiMongodb,
+  SiMysql,
+  SiNextdotjs,
+  SiOpenjdk,
+  SiPython,
+  SiReact,
+  SiTailwindcss,
+  SiTypescript,
+} from "react-icons/si";
+
+const skillIcons = {
+  java: SiOpenjdk,
+  python: SiPython,
+  javascript: SiJavascript,
+  typescript: SiTypescript,
+  html: SiHtml5,
+  tailwind: SiTailwindcss,
+  react: SiReact,
+  next: SiNextdotjs,
+  mysql: SiMysql,
+  mongodb: SiMongodb,
+  github: SiGithub,
+  docker: SiDocker,
+};
 
 const Skills = () => {
   return (
@@ -7,22 +36,23 @@ const Skills = () => {
         <p className="theme-accent text-sm font-semibold uppercase tracking-[0.2em]">Skills</p>
         <h2 className="theme-text mt-3 text-3xl font-bold sm:text-4xl">Core Technologies</h2>
 
-        <div className="mt-10 space-y-6">
-          {skillsData.map((skill) => (
-            <div key={skill.id}>
-              <div className="mb-2 flex items-center justify-between text-sm">
-                <span className="theme-text-soft font-medium">{skill.name}</span>
-                <span className="theme-text-muted">{skill.level}%</span>
+        <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-3">
+          {skillsData.map((skill) => {
+            const Icon = skillIcons[skill.icon as keyof typeof skillIcons];
+
+            return (
+              <div key={skill.id} className="theme-card theme-border rounded-2xl border px-4 py-3">
+                <div className="flex items-center gap-3 text-sm">
+                  {Icon ? (
+                    <Icon className="theme-accent text-xl" aria-hidden="true" />
+                  ) : (
+                    <div className="theme-surface h-9 w-9 rounded-full" aria-hidden="true" />
+                  )}
+                  <span className="theme-text-soft font-medium">{skill.name}</span>
+                </div>
               </div>
-              <div className="theme-surface h-2.5 w-full rounded-full">
-                <div
-                  className="theme-accent-fill h-2.5 rounded-full"
-                  style={{ width: `${skill.level}%` }}
-                  aria-label={`${skill.name} skill level ${skill.level} percent`}
-                />
-              </div>
-            </div>
-          ))}
+            );
+          })}
         </div>
       </div>
     </section>

@@ -11,6 +11,11 @@ const font = Inter({
 export const metadata: Metadata = {
   title: "Adsajan | Portfolio",
   description: "Personal portfolio of Adsajan, frontend and full stack developer.",
+  icons: {
+    icon: "/189502228.png",
+    shortcut: "/189502228.png",
+    apple: "/189502228.png",
+  },
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {

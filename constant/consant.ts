@@ -32,7 +32,7 @@ export type ProjectItem = {
 export type SkillItem = {
   id: number;
   name: string;
-  level: number;
+  icon: string;
 };
 
 export const NavLinks: NavLink[] = [
@@ -62,35 +62,43 @@ export const servicesData: ServiceItem[] = [
   {
     id: 3,
     icon: "images/s3.png",
-    name: "Backend Integration",
+    name: "Flyer Design",
     description:
-      "Connecting interfaces to APIs and data systems while keeping performance and reliability in mind.",
+      "Creating eye-catching flyers and posters that communicate clearly and match brand identity.",
   },
   {
     id: 4,
     icon: "images/s4.png",
-    name: "Product Collaboration",
+    name: "Video Editing",
     description:
-      "Working with teams to ship features quickly, from requirements and design to production release.",
+      "Editing short-form and promotional videos with smooth cuts, titles, and clean pacing.",
   },
 ];
 
 export const experienceData: ResumeItem[] = [
   {
     id: 1,
-    title: "Full Stack Developer",
-    organization: "Freelance",
-    period: "2024 - Present",
+    title: "Research Project Developer",
+    organization: "ASR System for Sri Lankan Tamil",
+    period: "2025 - Present",
     description:
-      "Building business websites and internal tools using Next.js, TypeScript, and REST APIs.",
+      "Developing an automatic speech recognition system using preprocessing, deep learning model training, and evaluation.",
   },
   {
     id: 2,
-    title: "Frontend Developer",
-    organization: "Client Projects",
-    period: "2023 - 2024",
+    title: "Team Lead",
+    organization: "Education Institute Management System",
+    period: "2025",
     description:
-      "Delivered modern interfaces with reusable components and responsive layouts for multiple clients.",
+      "Led a team to deliver a responsive institute management system with modules for students, teachers, courses, and scheduling.",
+  },
+  {
+    id: 3,
+    title: "Developer",
+    organization: "JeyaFoods - Food Ordering System",
+    period: "2025 - Present",
+    description:
+      "Built admin dashboard and POS features for a web-based food ordering platform with real-time updates.",
   },
 ];
 
@@ -117,49 +125,56 @@ export const projectsData: ProjectItem[] = [
   {
     id: 1,
     image: "images/p1.jpg",
-    title: "Ecommerce Dashboard",
+    title: "Automatic Speech Recognition (ASR) for Sri Lankan Tamil",
     description:
-      "Admin dashboard for managing products, orders, and analytics with a clear data-focused interface.",
-    tags: ["Next.js", "TypeScript", "Tailwind"],
+      "Individual research project focused on low-resource speech recognition using preprocessing and deep learning.",
+    tags: ["Python", "PyTorch", "Google Colab"],
     liveUrl: "#",
-    codeUrl: "#",
+    codeUrl: "https://github.com/Adsajan",
   },
   {
     id: 2,
     image: "images/p2.jpg",
-    title: "Portfolio Website",
+    title: "Education Institute Management System",
     description:
-      "Personal portfolio with animated hero section, clean sections, and mobile-first navigation.",
-    tags: ["React", "Next.js", "Animation"],
+      "Team software project to manage students, teachers, courses, and class scheduling with a responsive UI.",
+    tags: ["React.js", "Tailwind CSS", "ShadCN UI", "Node.js", "MongoDB"],
     liveUrl: "#",
-    codeUrl: "#",
+    codeUrl: "https://github.com/Adsajan",
   },
   {
     id: 3,
     image: "images/p3.jpg",
-    title: "Business Landing Page",
+    title: "Automated Application Deployment System",
     description:
-      "Fast-loading landing page optimized for conversions with structured content and call-to-action blocks.",
-    tags: ["UI/UX", "Frontend", "SEO"],
+      "Automated build, test, and release workflow for web applications to streamline deployments.",
+    tags: ["Python", "Jenkins", "Nginx"],
     liveUrl: "#",
-    codeUrl: "#",
+    codeUrl: "https://github.com/Adsajan",
   },
   {
     id: 4,
     image: "images/p4.jpg",
-    title: "Task Management App",
+    title: "JeyaFoods - Food Ordering System",
     description:
-      "Simple productivity app to plan and track work using a clear and maintainable interface.",
-    tags: ["Next.js", "State", "REST API"],
+      "Web-based food ordering platform with admin dashboard and POS system for real-time order management.",
+    tags: ["Next.js", "TypeScript", "MongoDB"],
     liveUrl: "#",
-    codeUrl: "#",
+    codeUrl: "https://github.com/Adsajan",
   },
 ];
 
 export const skillsData: SkillItem[] = [
-  { id: 1, name: "HTML/CSS", level: 95 },
-  { id: 2, name: "JavaScript", level: 90 },
-  { id: 3, name: "TypeScript", level: 85 },
-  { id: 4, name: "React / Next.js", level: 90 },
-  { id: 5, name: "UI/UX Design", level: 80 },
+  { id: 1, name: "Java", icon: "java" },
+  { id: 2, name: "Python", icon: "python" },
+  { id: 3, name: "JavaScript", icon: "javascript" },
+  { id: 4, name: "TypeScript", icon: "typescript" },
+  { id: 5, name: "HTML/CSS", icon: "html" },
+  { id: 6, name: "Tailwind CSS", icon: "tailwind" },
+  { id: 7, name: "React.js", icon: "react" },
+  { id: 8, name: "Next.js", icon: "next" },
+  { id: 9, name: "MySQL", icon: "mysql" },
+  { id: 10, name: "MongoDB", icon: "mongodb" },
+  { id: 11, name: "GitHub", icon: "github" },
+  { id: 12, name: "Docker", icon: "docker" },
 ];
